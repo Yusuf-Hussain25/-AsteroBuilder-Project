@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url(1.jpg) center center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 165, 0, 0.9);
+  padding: 50px;
+  border-radius: 50%;
+  width: 50%;
+}
+
+/* Background Image Section */
+.background-section {
+  position: relative;
+  height: 400px;
+  background: url('') center center/cover no-repeat; /* 🖼️ Add your image URL here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.background-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-overlay h2 {
+  font-size: 2rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background: #f8f9fa;
+  padding: 50px 0;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-images img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+.social-icon {
+  display: block;
+  margin-top: 5px;
+}
